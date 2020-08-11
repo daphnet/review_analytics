@@ -19,3 +19,15 @@ for d in data:
     sum_len = sum_len + len(d)
 print ('The average lengh of each review is', sum_len/len(data))
 
+
+# 56 清單的篩選
+
+# 篩選字數小於100(字元)的留言
+
+new = []
+for d in data:
+    if len(d) < 100:
+        new.append(d)
+print('There are', len(new), 'records whose length are less than 100 characters.')
+print(new[0])
+print(new[1])
